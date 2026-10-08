@@ -2,15 +2,19 @@
 using namespace std;
 class pekerja{
     private:
-        int gaji;
+        int gaji = 50;
     public:
         string nama;
         void cetakNama(){
-            cout<<nama<<endl;
+            cout<<"nama : "<<nama<<endl;
         }
+    void cetakGaji(){
+    	cout<<"gaji :"<<gaji<<endl;
+	}
 };
 int main(){
 	pekerja pekerja1;
     pekerja1.nama = "lutfi";
     pekerja1.cetakNama();
+    pekerja1.cetakGaji();
 }
